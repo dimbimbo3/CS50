@@ -1,2 +1,2 @@
 # CS50
-My completed work from xCS50
+This repository serves as an archive of the work (Practice Problems, Labs, Problem Sets) I have completed for Harvard's free online xCS50 course. I've chosen to follow along with this course in order to further strengthen my fundamentals in general programming, as well as further develop my skills with C in particular. To challenge myself, I've opted not to use the cs50 library throughout these assignments.
