@@ -1,0 +1,13 @@
+{
+    "cmake.configureOnOpen": false,
+    "files.associations": {
+        "*.module": "php",
+        "xstring": "c",
+        "ctype.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c",
+        "typeinfo": "c",
+        "type_traits": "c"
+    }
+}

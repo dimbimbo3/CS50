@@ -1,0 +1,20 @@
+sort1 uses: Bubble Sort
+random50000.txt (unsorted) - real    0m4.326s
+sorted50000.txt (sorted) - real    0m0.207s
+
+How do you know?: It is substantially faster on a sorted list than sort3,
+meaning this must be bubble sort which has a time complexity of O(n) for best case scenarios (lists already being sorted).
+
+sort2 uses: Merge Sort
+random50000 (unsorted) - real    0m0.116s
+sorted50000.txt (sorted) - real    0m0.167s
+ 
+How do you know?: Merge sort has a time complexity of O(nlogn) for its best case and worst case scenarios,
+meaning that it should be expotentially faster than the other two when faced with an unsorted list (both of the others have O(n^2) in such a case).
+
+sort3 uses: Selection Sort
+random5000 (unsorted) - real    0m1.382s
+sorted50000.txt (sorted) - real    0m1.359s
+
+How do you know?: There was not much difference between a sorted or unsorted list and it was never the fastest, 
+meaning this is selection sort which has a time complexity of O(n^2) in both worst & best case scenarios.

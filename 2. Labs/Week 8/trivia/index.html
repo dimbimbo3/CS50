@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // Runs script after page is fully loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                // Question 1
+                // Correct answer button
+                let correct = document.querySelector('#correct');
+                // sets click event for correct button
+                correct.addEventListener('click', function() {
+                    correct.style.backgroundColor = 'green';
+                    document.querySelector('#result1').innerHTML = 'Correct!';
+                });
+                
+                // Incorrect answer buttons
+                let incorrect = document.querySelectorAll('#incorrect');
+                // loops through each incorrect button
+                for(let i = 0; i < incorrect.length; i++)
+                {
+                    // sets click event for incorrect button
+                    incorrect[i].addEventListener('click', function() {
+                        incorrect[i].style.backgroundColor = 'red';
+                        document.querySelector('#result1').innerHTML = 'Incorrect.';
+                    });
+                };
+
+                // Question 2
+                // Check answer text
+                let check = document.querySelector("#check");
+                // sets click event for check answer button
+                check.addEventListener('click', function() {
+                    let answer = document.querySelector("#answer");
+                    // checks for the correct answer (without regard for casing)
+                    if(answer.value.toUpperCase() == "TRENTON")
+                    {
+                        answer.style.backgroundColor = "green";
+                        document.querySelector('#result2').innerHTML = "Correct!";
+                    }
+                    else
+                    {
+                        answer.style.backgroundColor = "red";
+                        document.querySelector('#result2').innerHTML = "Incorrect.";
+                    }
+                });
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which of the following sports does NOT traditionally take place on ice?</h3>
+                <button id="incorrect">Hockey</button>
+                <button id="incorrect">Speed Skating</button>
+                <button id="correct">Inline Skating</button>
+                <button id="incorrect">Curling</button>
+                <p id="result1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the capital of New Jersey?</h3>
+                <input type="text" placeholder="Answer" id="answer">
+                <button id="check">Check Answer</button>
+                <p id="result2"></p>
+            </div>
+        </div>
+    </body>
+</html>

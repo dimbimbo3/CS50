@@ -1,0 +1,89 @@
+/*On screens that are 992px or more*/
+@media screen and (min-width: 992px){
+    .navbar .container-fluid, .navbar-expand-lg .navbar-collapse, .navbar-expand-lg .navbar-nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar{
+        max-width: 150px;
+        width: 25%;
+        height: 100vh; /*takes up the entire verticle height of the viewport*/
+        align-items: flex-start;
+    }
+    .navbar-brand{
+        margin-left: .5rem;
+    }
+    .navbar-brand img{
+        width:100px;
+    }
+    main{
+        padding-top: 25px;
+        padding-left: 10%;
+    }
+}
+
+/*On screens that are 992px or less*/
+@media screen and (max-width: 992px){
+    .navbar-brand img{
+        width:50px;
+    }
+    main{
+        padding-top: 100px;
+    }
+}
+
+/*On all screens*/
+body{
+    background-color: slategray;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x:hidden;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+main{
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+main a{
+    color: whitesmoke;
+}
+
+main a:hover{
+    color: darkblue;
+}
+
+ul{
+    text-align: left;
+}
+
+.bolded{
+    font-weight: bold;
+}
+
+.carousel{
+    margin:auto; 
+    max-width:60%;
+}
+
+.centered{
+    padding-left: 10%; padding-right: 8%;
+}
+
+/*For JS Toggle*/
+.navbar{
+    display: block;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+#face{
+    max-width:300px;
+    width:50%;
+}

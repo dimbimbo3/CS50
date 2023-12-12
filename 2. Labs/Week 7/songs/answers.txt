@@ -1,0 +1,9 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?: The energy is above average with ~66%, 
+the valence is slightly below average with ~48%, and the danceability is slightly higher above average with ~72%. With this all in mind, I can only guess that their audio aura
+would be characterized as either Purple or Orange.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+This may not be representative of the listener because the 3 given averages seem to indicate the they enjoy high energy music, that is rather danceable, but somehow 
+also has sadness and anger to it (which would not typically be associated with songs of the former traits). Given this, I believe that the key, tempo, and speechiness of songs 
+should also be accounted to better seperate thrilling dance music from loud yet depressing alternative tunes, as well as layered instrumentals that lack any vocalization 
+but have significant complexity. Factoring in these additions would likely paint a better picture in regards to what feeling the listener was truly after.

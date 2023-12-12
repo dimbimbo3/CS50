@@ -1,0 +1,17 @@
+Times:
+
+10 simulations: real    0m0.032s
+100 simulations: real    0m0.033s
+1000 simulations: real    0m0.038s
+10000 simulations: real    0m0.088s
+100000 simulations: real    0m0.593s
+1000000 simulations: real    0m5.408s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?: The runtime did not even exceed 1 second until 1,000,000 simulations were run,
+which was unexpected. I also had anticipated 1,000,000 simulations to have a large difference in values compared to 100,000, and yet there were only very minor changes.
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?: The differences in the percentages calculated by 100,000 and 1,000,000 simulations were very minimal,
+despite the significant gulf in runtime between the two. Therefore, in this particular case I believe 100,000 simulations to be the sweet spot in terms of accuracy and speed.
