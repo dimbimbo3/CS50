@@ -10,7 +10,7 @@
                 "${file}",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}",
-                "-lm" //math.h
+                "-lm" //link math.h
             ],
             "options": {
                 "cwd": "${fileDirname}"
